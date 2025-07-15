@@ -1,0 +1,17 @@
+{
+    "crawler": {
+        "crawl_optimization": {
+            "crawl_strategy": "most complete",
+            "crawl_using_provided_logins_only": true
+        },
+        "customization": {
+            "allow_all_pointer_cursor_elements": true
+        }
+    },
+    "scanner": {
+        "audit_optimization": {
+            "max_items_in_progress": 1,
+            "parallel_crawl_and_audit": false
+        }
+    }
+}
