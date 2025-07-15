@@ -1,0 +1,11 @@
+{
+    "crawler": {
+        "crawl_optimization": {
+            "crawl_using_provided_logins_only": true,
+            "crawl_strategy": "most complete"
+        },
+        "customization": {
+            "allow_all_pointer_cursor_elements": true
+        }
+    }
+}
