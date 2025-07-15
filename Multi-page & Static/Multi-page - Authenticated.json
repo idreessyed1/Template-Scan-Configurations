@@ -1,0 +1,11 @@
+{
+    "crawler": {
+        "crawl_optimization": {
+            "crawl_strategy": "fastest",
+            "crawl_using_provided_logins_only": true
+        },
+        "crawl_limits": {
+            "maximum_crawl_time": 60
+        }
+    }
+}
