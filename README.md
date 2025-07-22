@@ -94,10 +94,6 @@ These configs represent a progression from speed-focused (multi-page) to thoroug
     - Crawling and auditing run sequentially, not in parallel
   - Best For: SPAs that can only handle one active session at a time
 
-  These configs represent a 2x3 matrix approach:
-  - Multi-page apps: Progress from fastest (Comprehensive) → fastest authenticated (Authenticated) → careful session handling (Single Session)
-  - Single-page apps: Progress from thorough coverage (Comprehensive) → authenticated focus (Authenticated Only) → session-safe thoroughness (Single Session)
-
 # References
 - https://portswigger.net/burp/documentation/scanner/scan-configurations/crawl-options
 - https://portswigger.net/burp/documentation/scanner/scan-configurations/audit-options
