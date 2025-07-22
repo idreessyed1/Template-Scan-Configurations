@@ -69,7 +69,7 @@ These configs represent a progression from speed-focused (multi-page) to thoroug
     - Authenticated-only crawling
     - Single-threaded scanning (max 1 item in progress)
     - Crawling and auditing run sequentially, not in parallel
-  - Best For: Multi-page applications with complex session dependencies that require careful state management
+  - Best For: Multi-page applications that can only handle one active session at a time
 
 <b>Single-page App - Comprehensive.json</b>
   - Purpose: Thorough scanning for single-page applications
@@ -95,7 +95,7 @@ These configs represent a progression from speed-focused (multi-page) to thoroug
     - Enhanced UI interaction capabilities
     - Single-threaded scanning (max 1 item in progress)
     - Crawling and auditing run sequentially, not in parallel
-  - Best For: SPAs with session state dependencies where concurrent operations might interfere with each other
+  - Best For: SPAs that can only handle one active session at a time
 
   These configs represent a 2x3 matrix approach:
   - Multi-page apps: Progress from fastest (Comprehensive) → fastest authenticated (Authenticated) → careful session handling (Single Session)
