@@ -13,6 +13,7 @@ These scan configurations are designed with the type of app in mind. The most co
 - Perfect to observe: No full page reloads, dynamic partial content updates, real-time behavior.
 
 </h2>Multi-page application (MPA)</h2>
+
 - Every link you click loads a brand new HTML page.
 - The browser fully reloads with a new URL (e.g., /History_of_the_Internet, /Cybersecurity).
 - Content is largely static per page.
@@ -20,6 +21,7 @@ These scan configurations are designed with the type of app in mind. The most co
 - Perfect to observe: Page reloads, crawlable links, separate HTML per page.
 
 <h2>Static web app (Static)</h2>
+
 - Every template/demo is fully static.
 - No user interaction, login, or backend.
 - Right-click > “View Page Source” shows all content upfront.
