@@ -1,8 +1,8 @@
 # Template-Scan-Configurations
 A collection of ready-to-use scan configuration templates for Burp Scanner. Useful for setting up scans quickly and consistently.
 
-These scan configurations are designed with the type of app in mind, the most common ones are:
-<b>Single-page application (SPA)</b>
+These scan configurations are designed with the type of app in mind. The most common ones are:
+<h1>Single-page application (SPA)</h1>
 Loads a single HTML page and dynamically updates content as the user interacts with the app, without reloading the page.
 Uses React — only one real page load at the start.
 Navigating through playlists, songs, or search does NOT reload the page.
