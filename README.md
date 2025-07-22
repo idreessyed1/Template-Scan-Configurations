@@ -6,33 +6,33 @@ These scan configurations are designed with the type of app in mind. The most co
 <b>Single-page application (SPA)</b>
 
 - Loads a single HTML page and dynamically updates content as the user interacts with the app, without reloading the page.
-- Uses React — only one real page load at the start.
+- Often uses frameworks like React, Vue, or Angular — only one full page load at the beginning.
 - Navigating through playlists, songs, or search does NOT reload the page.
 - All updates are through JavaScript and API calls.
-- URLs change using pushState() but no HTML reload happens.
+- URL changes are handled via pushState() or routing libraries without reloading the page.
 - Perfect to observe: No full page reloads, dynamic partial content updates, real-time behavior.
 
 <b>Multi-page application (MPA)</b>
 
 - Every link you click loads a brand new HTML page.
 - The browser fully reloads with a new URL (e.g., /History_of_the_Internet, /Cybersecurity).
-- Content is largely static per page.
+- Content is typically static per page, though dynamic behavior can still be added via JavaScript.
 - No JavaScript needed to fetch content.
 - Perfect to observe: Page reloads, crawlable links, separate HTML per page.
 
 <b>Static web app (Static)</b>
 
 - Every template/demo is fully static.
-- No user interaction, login, or backend.
+- No dynamic user interaction, login, or server-side backend.
 - Right-click > “View Page Source” shows all content upfront.
-- Content doesn’t change unless the files are manually edited.
+- Content only changes when the underlying files (HTML, CSS, etc.) are manually updated and redeployed.
 - Perfect to observe: Fixed HTML, fast loads, identical experience every time.
 
 <b>Dynamic web app (Dynamic)</b>
 
-- URL changes for each product page (MPA structure), but content is generated dynamically.
+- Often uses an MPA-like structure, but content is dynamically generated on the server or client based on user input or sessions.
 - Pricing, recommendations, availability vary per user/location.
-- Page source may not contain actual content without JS execution.
+- Requires JavaScript for rendering personalized or dynamic sections.
 - Uses AJAX, cookies, user sessions. 
 - Perfect to observe: Hidden inputs, JavaScript rendering, API responses, dynamic personalization.
 
