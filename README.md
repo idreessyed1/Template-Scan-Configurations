@@ -36,10 +36,7 @@ These scan configurations are designed with the type of app in mind. The most co
 - Uses AJAX, cookies, user sessions. 
 - Perfect to observe: Hidden inputs, JavaScript rendering, API responses, dynamic personalization.
 
-The provided scan configurations are a template, a foundation, and hence should be treated as such. These scan configurations should work as it is based on the type of application they are used for, but for any further changes, either follow the docs below or contact support@portswigger.net:
-
-https://portswigger.net/burp/documentation/scanner/scan-configurations/crawl-options
-https://portswigger.net/burp/documentation/scanner/scan-configurations/audit-options
+The provided scan configurations are a template, a foundation, and hence should be treated as such. These scan configurations should work as it is based on the type of application they are used for, but for any further changes, either follow the docs in the [References](#References) or contact support@portswigger.net
 
 These configs represent a progression from speed-focused (multi-page) to thoroughness-focused (SPA configs), with the single session variant adding session safety for complex application states.
 
@@ -100,3 +97,8 @@ These configs represent a progression from speed-focused (multi-page) to thoroug
   These configs represent a 2x3 matrix approach:
   - Multi-page apps: Progress from fastest (Comprehensive) → fastest authenticated (Authenticated) → careful session handling (Single Session)
   - Single-page apps: Progress from thorough coverage (Comprehensive) → authenticated focus (Authenticated Only) → session-safe thoroughness (Single Session)
+
+# References
+- https://portswigger.net/burp/documentation/scanner/scan-configurations/crawl-options
+- https://portswigger.net/burp/documentation/scanner/scan-configurations/audit-options
+- https://portswigger.net/burp/documentation/scanner/scanning-spas
