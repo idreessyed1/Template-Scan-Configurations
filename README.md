@@ -45,7 +45,7 @@ These configs represent a progression from speed-focused (multi-page) to thoroug
 
 # Configuration Summaries
 
-<b>Multi-page - Comprehensive.json</b>
+<h3>Multi-page - Comprehensive.json</h3>
   - Purpose: Fast scanning for traditional multi-page applications
   - Key Settings:
     - Uses fastest crawl strategy (speed-optimized)
@@ -53,7 +53,7 @@ These configs represent a progression from speed-focused (multi-page) to thoroug
     - Allows both anonymous and authenticated crawling
   - Best For: Quick comprehensive scans of multi-page web applications with time constraints
 
-<b>Multi-page - Authenticated.json</b>
+<h3>Multi-page - Authenticated.json</h3>
   - Purpose: Fast authenticated scanning for multi-page applications
   - Key Settings:
     - Uses fastest crawl strategy (speed-optimized)
@@ -61,7 +61,7 @@ These configs represent a progression from speed-focused (multi-page) to thoroug
     - Only uses provided login credentials (no anonymous crawling)
   - Best For: Quick authenticated scans of multi-page applications where login areas are the focus
 
-<b>Multi-page - single session.json</b>
+<h3>Multi-page - single session.json</h3>
   - Purpose: Session-safe scanning for multi-page applications
   - Key Settings:
     - Uses normal crawl strategy (balanced approach)
@@ -71,7 +71,7 @@ These configs represent a progression from speed-focused (multi-page) to thoroug
     - Crawling and auditing run sequentially, not in parallel
   - Best For: Multi-page applications that can only handle one active session at a time
 
-<b>Single-page App - Comprehensive.json</b>
+<h3>Single-page App - Comprehensive.json</h3>
   - Purpose: Thorough scanning for single-page applications
   - Key Settings:
     - Most complete crawl strategy (thoroughness-optimized)
@@ -79,7 +79,7 @@ These configs represent a progression from speed-focused (multi-page) to thoroug
     - Allows both anonymous and authenticated crawling
   - Best For: Complete testing of SPAs including both public and authenticated areas
 
-<b>Single-page App - Authenticated Only.json</b>
+<h3>Single-page App - Authenticated Only.json</h3>
   - Purpose: Thorough authenticated scanning for SPAs
   - Key Settings:
     - Most complete crawl strategy (thoroughness-optimized)
@@ -87,7 +87,7 @@ These configs represent a progression from speed-focused (multi-page) to thoroug
     - Enables interaction with all clickable UI elements
   - Best For: Deep authenticated testing of single-page applications where login is required
 
-<b>Single-page App - single session.json</b>
+<h3>Single-page App - single session.json</h3>
   - Purpose: Sequential, session-safe scanning for SPAs
   - Key Settings:
     - Most complete crawl strategy (thoroughness-optimized)
