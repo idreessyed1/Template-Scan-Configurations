@@ -41,15 +41,66 @@ The provided scan configurations are a template, a foundation, and hence should 
 https://portswigger.net/burp/documentation/scanner/scan-configurations/crawl-options
 https://portswigger.net/burp/documentation/scanner/scan-configurations/audit-options
 
-The scan configuration templates are categorised against the application type. Here are a few details about each scan configuration provided:
+These configs represent a progression from speed-focused (multi-page) to thoroughness-focused (SPA configs), with the single session variant adding session safety for complex application states.
 
-<h2>Authenticated scan configuration</h2>
-The <i>'Crawl using my provided logins only'</i> toggle is enabled, which means Burp will only run an authenticated crawl of the app (if authentication is set up in Burp Suite). The crawl limit is set to the default value of 150 minutes.
+# Configuration Summaries
 
-The crawl strategy is set to <i>'Most Complete'</i> for Single-page or Dynamic apps for a more comprehensive crawl, while it is set to <i>'Fastest'</i> for Multi-page and Static apps. For the Single-page apps, the <i>'Click all pointer cursor elements'</i> toggle is also enabled, which allows for a better crawl by using non-standard clickable elements on the site.
+  1. Multi-page - Comprehensive.json
+  - Purpose: Fast scanning for traditional multi-page applications
+  - Key Settings:
+    - Uses fastest crawl strategy (speed-optimized)
+    - 90-minute maximum crawl time limit
+    - Allows both anonymous and authenticated crawling
+  - Best For: Quick comprehensive scans of multi-page web applications with time constraints
 
-<h2>Comprehensive scan configuration</h2>
-A comprehensive scan configuration will allow you to crawl the app unauthenticated and then authenticated (if authentication is set up). The rest of the settings are similar to those in the previous section.
+  2. Multi-page - Authenticated.json
+  - Purpose: Fast authenticated scanning for multi-page applications
+  - Key Settings:
+    - Uses fastest crawl strategy (speed-optimized)
+    - 60-minute maximum crawl time limit
+    - Only uses provided login credentials (no anonymous crawling)
+  - Best For: Quick authenticated scans of multi-page applications where login areas are the focus
 
-<h2>Single session scan configuration</h2>
-This scan configuration allows you to scan applications that only allow one session at a time. The crawl strategy remains the same based on the app's type, with the addition of scan settings that accommodate the one-session requirement, and also setting the parallel crawl and audit to false.
+  3. Multi-page - single session.json
+  - Purpose: Session-safe scanning for multi-page applications
+  - Key Settings:
+    - Uses normal crawl strategy (balanced approach)
+    - 150-minute maximum crawl time limit
+    - Authenticated-only crawling
+    - Single-threaded scanning (max 1 item in progress)
+    - Crawling and auditing run sequentially, not in parallel
+  - Best For: Multi-page applications with complex session dependencies that require careful state management
+
+  4. Single-page App - Comprehensive.json
+  - Purpose: Thorough scanning for single-page applications
+  - Key Settings:
+    - Most complete crawl strategy (thoroughness-optimized)
+    - Enables interaction with all clickable UI elements
+    - Allows both anonymous and authenticated crawling
+  - Best For: Complete testing of SPAs including both public and authenticated areas
+
+  5. Single-page App - Authenticated Only.json
+  - Purpose: Thorough authenticated scanning for SPAs
+  - Key Settings:
+    - Most complete crawl strategy (thoroughness-optimized)
+    - Only uses provided login credentials (no anonymous crawling)
+    - Enables interaction with all clickable UI elements
+  - Best For: Deep authenticated testing of single-page applications where login is required
+
+  6. Single-page App - single session.json
+  - Purpose: Sequential, session-safe scanning for SPAs
+  - Key Settings:
+    - Most complete crawl strategy (thoroughness-optimized)
+    - Authenticated-only crawling
+    - Enhanced UI interaction capabilities
+    - Single-threaded scanning (max 1 item in progress)
+    - Crawling and auditing run sequentially, not in parallel
+  - Best For: SPAs with session state dependencies where concurrent operations might interfere with each other
+
+  Logical Grouping
+
+  These configs represent a 2x3 matrix approach:
+  - Multi-page apps: Progress from fastest (Comprehensive) → fastest authenticated (Authenticated) → careful session handling (Single Session)
+  - Single-page apps: Progress from thorough coverage (Comprehensive) → authenticated focus (Authenticated Only) → session-safe thoroughness (Single Session)
+
+  The progression moves from speed-focused to thoroughness-focused to session-safety-focused within each application type.
