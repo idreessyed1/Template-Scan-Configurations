@@ -3,7 +3,7 @@ A collection of ready-to-use scan configuration templates for Burp Scanner. Usef
 
 These scan configurations are designed with the type of app in mind. The most common ones are:
 
-<h2>Single-page application (SPA)</h2>
+<h3>Single-page application (SPA)</h3>
 
 - Loads a single HTML page and dynamically updates content as the user interacts with the app, without reloading the page.
 - Uses React — only one real page load at the start.
@@ -12,7 +12,7 @@ These scan configurations are designed with the type of app in mind. The most co
 - URLs change using pushState() but no HTML reload happens.
 - Perfect to observe: No full page reloads, dynamic partial content updates, real-time behavior.
 
-<h2>Multi-page application (MPA)</h2>
+<h3>Multi-page application (MPA)</h3>
 
 - Every link you click loads a brand new HTML page.
 - The browser fully reloads with a new URL (e.g., /History_of_the_Internet, /Cybersecurity).
@@ -20,7 +20,7 @@ These scan configurations are designed with the type of app in mind. The most co
 - No JavaScript needed to fetch content.
 - Perfect to observe: Page reloads, crawlable links, separate HTML per page.
 
-<h2>Static web app (Static)</h2>
+<h3>Static web app (Static)</h3>
 
 - Every template/demo is fully static.
 - No user interaction, login, or backend.
@@ -28,7 +28,7 @@ These scan configurations are designed with the type of app in mind. The most co
 - Content doesn’t change unless the files are manually edited.
 - Perfect to observe: Fixed HTML, fast loads, identical experience every time.
 
-<h2>Dynamic web app (Dynamic)</h2>
+<h3>Dynamic web app (Dynamic)</h3>
 
 - URL changes for each product page (MPA structure), but content is generated dynamically.
 - Pricing, recommendations, availability vary per user/location.
