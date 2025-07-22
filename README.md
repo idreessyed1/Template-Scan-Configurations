@@ -4,12 +4,12 @@ A collection of ready-to-use scan configuration templates for Burp Scanner. Usef
 These scan configurations are designed with the type of app in mind. The most common ones are:
 
 <h2>Single-page application (SPA)</h2>
-Loads a single HTML page and dynamically updates content as the user interacts with the app, without reloading the page.
-Uses React — only one real page load at the start.
-Navigating through playlists, songs, or search does NOT reload the page.
-All updates are through JavaScript and API calls.
-URLs change using pushState() but no HTML reload happens.
-Perfect to observe: No full page reloads, dynamic partial content updates, real-time behavior.
+- Loads a single HTML page and dynamically updates content as the user interacts with the app, without reloading the page.
+- Uses React — only one real page load at the start.
+- Navigating through playlists, songs, or search does NOT reload the page.
+- All updates are through JavaScript and API calls.
+- URLs change using pushState() but no HTML reload happens.
+- Perfect to observe: No full page reloads, dynamic partial content updates, real-time behavior.
 
 </h2>Multi-page application (MPA)</h2>
 - Every link you click loads a brand new HTML page.
