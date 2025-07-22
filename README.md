@@ -2,7 +2,8 @@
 A collection of ready-to-use scan configuration templates for Burp Scanner. Useful for setting up scans quickly and consistently.
 
 These scan configurations are designed with the type of app in mind. The most common ones are:
-<h1>Single-page application (SPA)</h1>
+
+<h2>Single-page application (SPA)</h2>
 Loads a single HTML page and dynamically updates content as the user interacts with the app, without reloading the page.
 Uses React — only one real page load at the start.
 Navigating through playlists, songs, or search does NOT reload the page.
@@ -10,26 +11,26 @@ All updates are through JavaScript and API calls.
 URLs change using pushState() but no HTML reload happens.
 Perfect to observe: No full page reloads, dynamic partial content updates, real-time behavior.
 
-<b>Multi-page application (MPA)</b>
-Every link you click loads a brand new HTML page.
-The browser fully reloads with a new URL (e.g., /History_of_the_Internet, /Cybersecurity).
-Content is largely static per page.
-No JavaScript needed to fetch content.
-Perfect to observe: Page reloads, crawlable links, separate HTML per page.
+</h2>Multi-page application (MPA)</h2>
+- Every link you click loads a brand new HTML page.
+- The browser fully reloads with a new URL (e.g., /History_of_the_Internet, /Cybersecurity).
+- Content is largely static per page.
+- No JavaScript needed to fetch content.
+- Perfect to observe: Page reloads, crawlable links, separate HTML per page.
 
-<b>Static web app (Static)</b>
-Every template/demo is fully static.
-No user interaction, login, or backend.
-Right-click > “View Page Source” shows all content upfront.
-Content doesn’t change unless the files are manually edited.
-Perfect to observe: Fixed HTML, fast loads, identical experience every time.
+<h2>Static web app (Static)</h2>
+- Every template/demo is fully static.
+- No user interaction, login, or backend.
+- Right-click > “View Page Source” shows all content upfront.
+- Content doesn’t change unless the files are manually edited.
+- Perfect to observe: Fixed HTML, fast loads, identical experience every time.
 
-<b>Dynamic web app (Dynamic)</b>
-URL changes for each product page (MPA structure), but content is generated dynamically.
-Pricing, recommendations, availability vary per user/location.
-Page source may not contain actual content without JS execution.
-Uses AJAX, cookies, user sessions. 
-Perfect to observe: Hidden inputs, JavaScript rendering, API responses, dynamic personalization.
+<h2>Dynamic web app (Dynamic)</h2>
+- URL changes for each product page (MPA structure), but content is generated dynamically.
+- Pricing, recommendations, availability vary per user/location.
+- Page source may not contain actual content without JS execution.
+- Uses AJAX, cookies, user sessions. 
+- Perfect to observe: Hidden inputs, JavaScript rendering, API responses, dynamic personalization.
 
 The provided scan configurations are a template, a foundation, and hence should be treated as such. These scan configurations should work as it is based on the type of application they are used for, but for any further changes, either follow the docs below or contact support@portswigger.net:
 
