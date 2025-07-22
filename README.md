@@ -12,7 +12,7 @@ These scan configurations are designed with the type of app in mind. The most co
 - URLs change using pushState() but no HTML reload happens.
 - Perfect to observe: No full page reloads, dynamic partial content updates, real-time behavior.
 
-</h2>Multi-page application (MPA)</h2>
+<h2>Multi-page application (MPA)</h2>
 
 - Every link you click loads a brand new HTML page.
 - The browser fully reloads with a new URL (e.g., /History_of_the_Internet, /Cybersecurity).
@@ -29,6 +29,7 @@ These scan configurations are designed with the type of app in mind. The most co
 - Perfect to observe: Fixed HTML, fast loads, identical experience every time.
 
 <h2>Dynamic web app (Dynamic)</h2>
+
 - URL changes for each product page (MPA structure), but content is generated dynamically.
 - Pricing, recommendations, availability vary per user/location.
 - Page source may not contain actual content without JS execution.
