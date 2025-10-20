@@ -43,17 +43,17 @@ These configs represent a progression from speed-focused (multi-page) to thoroug
 # Configuration Summaries
 
 <b>Multi-page - Comprehensive.json</b>
-  - Purpose: Fast scanning for traditional multi-page applications
+  - Purpose: For scanning traditional multi-page applications
   - Key Settings:
-    - Uses fastest crawl strategy (speed-optimized)
+    - Uses Normal crawl strategy
     - 90-minute maximum crawl time limit
     - Allows both anonymous and authenticated crawling
   - Best For: Quick comprehensive scans of multi-page web applications with time constraints
 
 <b>Multi-page - Authenticated.json</b>
-  - Purpose: Fast authenticated scanning for multi-page applications
+  - Purpose: For authenticated scanning for multi-page applications
   - Key Settings:
-    - Uses fastest crawl strategy (speed-optimized)
+    - Uses normal crawl strategy
     - 60-minute maximum crawl time limit
     - Only uses provided login credentials (no anonymous crawling)
   - Best For: Quick authenticated scans of multi-page applications where login areas are the focus
