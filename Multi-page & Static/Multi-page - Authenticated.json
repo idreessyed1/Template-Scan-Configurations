@@ -1,7 +1,7 @@
 {
     "crawler": {
         "crawl_optimization": {
-            "crawl_strategy": "fastest",
+            "crawl_strategy": "normal",
             "crawl_using_provided_logins_only": true
         },
         "crawl_limits": {
